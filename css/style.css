@@ -1,0 +1,292 @@
+html{
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+}
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Header */
+header{
+    background-color: grey;
+    background-image: linear-gradient(to right, grey 30%, rgb(181, 39, 39));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1.3rem;
+}
+header img{
+    height: 100%;
+}
+header img{
+    width: 15%;
+    margin-right: 5%;
+}
+
+/* For font size */
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+}
+a{
+    font-size: 1rem;
+}
+th{
+    font-size: 1.5rem;
+}
+td{
+    font-size: 1.3rem;
+}
+
+/* Navigation */
+nav{
+    margin: 0, 1.3rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    height: 2.7rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+}
+nav >ul> li{
+    display: inline-block;
+    width: 10rem;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 2.7rem;
+    background-color: rgb(152, 100, 33);
+    width: 10rem;
+    height: auto;
+    z-index: 999;
+}
+nav > ul > li > ul > li > a{
+    width: 10rem;
+}
+nav ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    background-color: darkslategrey;
+}
+a:hover{
+    color: darkslategrey;
+    background-color: white;
+    width: 10rem;
+}
+a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem;
+    width: 10rem;
+}
+li{
+    list-style: none;
+}
+
+#outside{
+    display: flex;
+    flex-direction: row;
+    margin: 1.3rem 0 1.3rem 0
+}
+/* Main */
+main{
+    flex-basis: 75%;
+    background-color: rgb(219, 216, 216);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    padding: 2rem;
+}
+
+/* For Index page */
+#nikola-bio{
+    text-align: center;
+}
+#nikola{
+    text-align: left;
+}
+#nikola-pic{
+    float: left;
+    width: 40%;
+    shape-outside: polygon(0px 0px, 54.91% 2px, 57.3% 6.8%, 59.76% 13.3%, 59.83% 20.78%, 55.76% 24.68%, 59.99% 31.89%, 74.92% 36.38%, 79.16% 47.14%, 81.14% 55.23%, 83.24% 63.99%, 84.13% 72.12%, 83.73% 83.35%, 79.5% 94.7%, 67.25% 100.4%, 0.67% 100.99%);
+}
+table{
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    width: 80%;
+}
+th{
+    background-color: gray;
+}
+tbody tr:nth-child(odd){
+    background-color: darkslategrey;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(181, 39, 39);
+}
+tbody tr{
+    color: white;
+}
+table td, table th{
+    height: 2.3rem;
+    gap: 0.3rem;
+}
+table, table tr, table td, table th{
+    border: .13rem solid black;
+}
+
+/* For Gallery page */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-img{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    width: 100%;
+    border: .13rem solid rgb(181, 39, 39);
+    margin: 0;
+}
+.grid-img img{
+    width: 80%;
+}
+.img-art{
+    clip-path: polygon(0px 0px, 50% 5%, 100% 0px, 95% 50%, 100% 100%, 50% 95%, 0% 100%, 5% 50%);
+}
+
+/* For Contact Us page */
+.contact-form{
+    width: 65%;
+}
+.label-display{
+    display: flex;
+    flex-direction: row;
+}
+
+/* For Media page */
+.vid-sec{
+    width: 80%;
+    margin: 2rem;
+}
+.vid{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* Aside */
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 25%;
+    padding: 0;
+    font-size: x-large;
+    background-color: white;
+    background-image: url(../img/aside.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+aside > ul{
+    padding: 0;
+    width: 50%;
+}
+aside > ul > li > a{
+    color: white;
+    font-weight: 700;
+    width: 50%;
+    backdrop-filter: blur(2px);
+}
+aside > ul > li > a:hover{
+    color: black;
+}    
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: darkslategrey;
+    background-image: linear-gradient(to right, darkslategrey 30%, rgb(181, 39, 39));
+    height: 5.5rem;
+    font-size: larger;
+}
+
+/* Media */
+@media(max-width: 1202px){
+    #outside{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 924px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    html{
+        width: 100%;
+        font-size: 12px;
+    }
+    #nikola-pic{
+        width: 45%;
+    }
+}
+@media(max-width: 680px){
+    main{
+        padding: 2rem 0.2rem;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    html{
+        width: 100%;
+        font-size: 10px;
+    }
+    #nikola-pic{
+        width: 50%;
+    }
+}
+@media(max-width: 472px){
+    html{
+        width: 100%;
+        font-size: 8px;
+    }
+}
